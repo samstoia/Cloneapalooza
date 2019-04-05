@@ -12,3 +12,28 @@
     background-position: center;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tickets {
+  height: 300px;
+  width: 50%;
+  background-image: url('../../assets/buy-ticket.jpg');
+  float: right;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hotel {
+  height: 300px;
+  width: 50%;
+  background-image: url('../../assets/hotel.jpg');
+  float: right;
+}
