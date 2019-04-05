@@ -1,0 +1,25 @@
+.lownav {
+  height: 60px;
+  background-color:#00af9a;
+  text-align: center;
+}
+
+.lownav ul {
+  list-style-type: none;
+  display:inline-block;
+}
+
+.lowNavLink {
+  margin-top: 15px;
+  float:left;
+  color: white;
+  margin-left: 50px;
+  font-family: verdana;
+  font-weight: 900;
+}
+
+.lowNavLink:hover {
+  text-decoration: underline;
+}
+
+

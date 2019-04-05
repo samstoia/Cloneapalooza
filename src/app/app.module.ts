@@ -8,6 +8,7 @@ import { BrandingComponent } from './branding/branding.component';
 import { MidnavComponent } from './midnav/midnav.component';
 import { PosterComponent } from './poster/poster.component';
 import { NewsComponent } from './news/news.component';
+import { LownavComponent } from './lownav/lownav.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NewsComponent } from './news/news.component';
     BrandingComponent,
     MidnavComponent,
     PosterComponent,
-    NewsComponent
+    NewsComponent,
+    LownavComponent
   ],
   imports: [
     BrowserModule
