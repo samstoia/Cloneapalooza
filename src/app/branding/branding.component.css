@@ -1,8 +1,6 @@
 #component-height {
   height: 250px;
   background-color:#5D2EA5;
-  margin-left: none;
-
 }
 
 #boombox {
@@ -30,4 +28,10 @@
 h3 {
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width:480px) {  
+  #boombox, #flag-alien {
+    display: none;
+  }
 }
