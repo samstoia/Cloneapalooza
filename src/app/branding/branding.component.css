@@ -4,3 +4,30 @@
   margin-left: none;
 
 }
+
+#boombox {
+  float: left;
+  height: 150px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+#flag-alien {
+  float: right;
+  height: 150px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+#lolla-branding {
+  height: 72px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
