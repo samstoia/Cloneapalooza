@@ -1,5 +1,14 @@
 .poster {
   width: 50%;
   height: 600px;
-  background-color: black;
+  background-image: url('../../assets/lineup-poster.png');
+  overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-color: black;
+    
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
