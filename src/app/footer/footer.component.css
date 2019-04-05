@@ -1,0 +1,29 @@
+.footer {
+  height: 100px;
+  background-color: black;
+  
+  position: relative;
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#whiteText {
+  color: white;
+  margin-right: 15px;
+}
+
+#yellowText {
+  color: gold;
+  margin-right: 15px;
+}
+
+button {
+ background-color: #9164cc
+}
