@@ -18,16 +18,21 @@
   display: table;
 }
 
+.row2 {
+  float: right;
+  height: 601px;
+  width: 50%;
+}
+
 .tickets {
   height: 300px;
-  width: 50%;
-  background-image: url('../../assets/buy-ticket.jpg');
-  float: right;
+  width: 100%;
+
 }
 
 .hotel {
   height: 300px;
-  width: 50% !important;
+  width: 100%;
   background-image: url('../../assets/hotel.jpg');
-  float: right;
+
 }
