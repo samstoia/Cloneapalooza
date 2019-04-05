@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrandingComponent } from './branding/branding.component';
 import { MidnavComponent } from './midnav/midnav.component';
+import { PosterComponent } from './poster/poster.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MidnavComponent } from './midnav/midnav.component';
     AppComponent,
     NavbarComponent,
     BrandingComponent,
-    MidnavComponent
+    MidnavComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule
