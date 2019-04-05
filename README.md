@@ -4,6 +4,8 @@ This is my attempt at recreating Lollapalooza's home page ahead of its 2019 fest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+Live Website here: https://www.lollapalooza.com/
+
 ## Features Available Right Now:
 
 The site is a series of components made with Angular.  Right now, the page utilizes seven components which make up the structure of the home page.
