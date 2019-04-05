@@ -10,7 +10,7 @@
   list-style-type: none;
   display:inline-block;
 }
-.midnav li {
+.midnavDrop {
   margin-top: 15px;
   float:left;
   color: white;
@@ -18,3 +18,18 @@
   font-family: verdana;
   font-weight: 900;
 }
+
+.linkList {
+  float: right;
+  margin-right: 40px;
+}
+
+.midnavLink{
+  margin-top: 15px;
+  float:right;
+  color: white;
+  margin-left: 20px;
+  font-family: verdana;
+  font-weight: 900;
+}
+
