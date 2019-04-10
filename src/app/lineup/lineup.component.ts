@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { NAMESPACE_URIS } from '@angular/platform-browser/src/dom/dom_renderer';
 
 @Component({
   selector: 'app-lineup',
@@ -11,19 +10,21 @@ import { NAMESPACE_URIS } from '@angular/platform-browser/src/dom/dom_renderer';
 export class LineupComponent implements OnInit {
 
   artists: Object;
+  names: [];
 
   constructor(private data: ApiService) { }
 
   ngOnInit() {
     this.data.getArtists().subscribe(data => {
       this.artists = data;
-      let names: [] = [];
+      this.names = [];
       let arr: [] = this.artists._embedded.events[0]._embedded.attractions;
       for (let i=0; i<arr.length; i++) {
         let artistName: string = arr[i].name;
-        names.push(artistName);
-        return names;
+        this.names.push(artistName);
+      
       }
     })
   }
+  
 }
