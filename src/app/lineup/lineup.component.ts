@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class LineupComponent implements OnInit {
 
-  artists: Object;
+  artists;
   names: any[];
 
   constructor(private data: ApiService) { }

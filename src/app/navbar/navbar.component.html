@@ -26,8 +26,8 @@
       </li>
 
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="E-LIST" aria-label="Search">
-        <button id="joinbtn" class="btn bg-warning my-2 my-sm-0" type="submit">Join</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="E-LIST" aria-label="Search" #newEmail>
+        <button id="joinbtn" class="btn bg-warning my-2 my-sm-0" (click)="submitForm(newEmail.value)">Join</button>
       </form>
 
 
