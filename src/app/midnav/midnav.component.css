@@ -16,7 +16,7 @@
   color: white;
   margin-left: 50px;
   font-family: verdana;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .linkList {
@@ -31,7 +31,7 @@
   color: white;
   margin-left: 20px;
   font-family: verdana;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .dropbtn {
@@ -39,7 +39,7 @@
   color: white;
   margin-left: 50px;
   font-family: verdana;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .dropdown {
@@ -77,6 +77,20 @@ a h3:hover {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #00af9a;}
+
+@media only screen and (max-width: 1378px) {
+  .col-md-4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1378px) {
+  .col-md-8 {
+    width: 100%;
+  }
+}
+
+
 
 
 
