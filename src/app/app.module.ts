@@ -14,6 +14,8 @@ import { LownavComponent } from './lownav/lownav.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
+import { TicketsComponent } from './tickets/tickets.component';
+import { LineupComponent } from './lineup/lineup.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { routing } from './app.routing';
     NewsComponent,
     LownavComponent,
     FooterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TicketsComponent,
+    LineupComponent
   ],
   imports: [
     BrowserModule,
