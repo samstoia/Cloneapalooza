@@ -1,7 +1,10 @@
+.col-md-6 {
+  background-color: black;
+}
 
 .poster {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   background-color: black;
   background-position: center;
 }

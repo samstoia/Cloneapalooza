@@ -1,10 +1,10 @@
-<app-navbar></app-navbar>
-<app-branding></app-branding>
-<app-midnav></app-midnav>
-<div>
-  <ul>
-    <li *ngFor="let name of names">{{name}}</li>
-  </ul>
-</div>
-<app-lownav></app-lownav>
-<app-footer></app-footer>
+
+  <button (click)="sortArray()">Sort</button>
+
+  <div id="artists" class='col-md-3' *ngFor="let name of names">
+    <button>{{name}}</button>
+  </div>
+
+
+
+

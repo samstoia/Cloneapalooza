@@ -10,7 +10,7 @@ import { ApiService } from '../api.service';
 export class LineupComponent implements OnInit {
 
   artists: Object;
-  names: [];
+  names: any[];
 
   constructor(private data: ApiService) { }
 
@@ -18,13 +18,17 @@ export class LineupComponent implements OnInit {
     this.data.getArtists().subscribe(data => {
       this.artists = data;
       this.names = [];
-      let arr: [] = this.artists._embedded.events[0]._embedded.attractions;
+      let arr = this.artists._embedded.events[0]._embedded.attractions;
       for (let i=0; i<arr.length; i++) {
         let artistName: string = arr[i].name;
         this.names.push(artistName);
-      
       }
     })
+  }
+
+  sortArray() {
+
+    return this.names.sort();
   }
   
 }
