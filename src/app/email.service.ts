@@ -28,4 +28,9 @@ export class EmailService {
 
   }
 
+  deleteEmail(localEmailToDelete){
+    var emailEntryInFirebase = this.getEmailById(localEmailToDelete.$key);
+    emailEntryInFirebase.remove();
+  }
+
 }

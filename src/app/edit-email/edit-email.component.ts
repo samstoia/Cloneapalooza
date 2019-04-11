@@ -21,4 +21,9 @@ export class EditEmailComponent implements OnInit {
     this.sendClick.emit(email);
     this.emailService.updateEmail(email);
   }
+
+  deleteButtonClicked(email) {
+    this.sendClick.emit(email);
+    this.emailService.deleteEmail(email);
+  }
 }
