@@ -21,6 +21,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { TicketsComponent } from './tickets/tickets.component';
 import { LineupComponent } from './lineup/lineup.component';
+import { AdminComponent } from './admin/admin.component';
+import { EmailsComponent } from './emails/emails.component';
 
 
 export const firebaseConfig = {
@@ -42,7 +44,9 @@ export const firebaseConfig = {
     FooterComponent,
     WelcomeComponent,
     TicketsComponent,
-    LineupComponent
+    LineupComponent,
+    AdminComponent,
+    EmailsComponent
   ],
   imports: [
     BrowserModule,

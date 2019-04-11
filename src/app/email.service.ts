@@ -10,8 +10,16 @@ export class EmailService {
     this.emails = database.list('emails');
   }
 
+  getEmails() {
+    return this.emails;
+  }
+
   addEmail(newEmail: Email) {
     this.emails.push(newEmail);
+  }
+
+  getEmailById(emailId: string){
+    return this.database.object('emails/' + emailId);
   }
 
 }
