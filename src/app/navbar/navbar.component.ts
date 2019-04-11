@@ -12,12 +12,14 @@ export class NavbarComponent implements OnInit {
 
   constructor(private emailService: EmailService) { }
 
+  showMsg: boolean = false;
   ngOnInit() {
   }
 
   submitForm(email: string) {
     var newEmail: Email = new Email(email);
     this.emailService.addEmail(newEmail);
+    this.showMsg = true;
   }
 
 }
