@@ -25,9 +25,10 @@
         <a href="" class="fa fa-ellipsis-h"></a>
       </li>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="E-LIST" aria-label="Search" #newEmail>
-        <button id="joinbtn" class="btn bg-warning my-2 my-sm-0" (click)="submitForm(newEmail.value)">Join</button>
+      <form class="form-inline my-2 my-lg-0" #emailInput="ngForm">
+        <input class="form-control mr-sm-2" type="email" ngModel name="email" required email placeholder="E-LIST" #newEmail>
+        <button [disabled]="!emailInput.valid" id="joinbtn" class="btn bg-warning my-2 my-sm-0" (click)="submitForm(newEmail.value); newEmail.value=''">Join</button>
+        <div> </div>
       </form>
 
 
