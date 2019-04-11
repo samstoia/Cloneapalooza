@@ -14,14 +14,21 @@ import { EmailService } from '../email.service';
 export class AdminComponent implements OnInit {
   emails: FirebaseListObservable<any[]>;
 
+  currentRoute: string = this.router.url;
+  selectedEmail = null;
+
   constructor(private router: Router, private emailService: EmailService) { }
 
   ngOnInit() {
     this.emails = this.emailService.getEmails()
+    console.log(this.router.url);
   }
 
-  goToDetailPage(clickedEmail) {
-    this.router.navigate(['emails', clickedEmail.$key]);
+  edit(clickedEmail) {
+    this.selectedEmail = clickedEmail;
   };
 
+  doneEditing(){
+    this.selectedEmail = null;
+  }
 }

@@ -1,6 +1,10 @@
 <h2>List of emails added to database:</h2>
 
-<div *ngFor="let email of emails | async" (click)="goToDetailPage(email)">
+<div *ngFor="let email of emails | async" (click)="edit(email)">
   <h3><em>{{email.emailAddress}}</em></h3>
-  <h1>{{email.$key}}</h1>
 </div>
+<div *ngIf="selectedEmail">
+  <hr>
+  <app-edit-email (sendClick)="doneEditing()" [emailToEdit]="selectedEmail"></app-edit-email>
+</div>
+

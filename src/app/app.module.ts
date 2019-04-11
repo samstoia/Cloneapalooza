@@ -23,6 +23,7 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { LineupComponent } from './lineup/lineup.component';
 import { AdminComponent } from './admin/admin.component';
 import { EmailsComponent } from './emails/emails.component';
+import { EditEmailComponent } from './edit-email/edit-email.component';
 
 
 export const firebaseConfig = {
@@ -46,7 +47,8 @@ export const firebaseConfig = {
     TicketsComponent,
     LineupComponent,
     AdminComponent,
-    EmailsComponent
+    EmailsComponent,
+    EditEmailComponent
   ],
   imports: [
     BrowserModule,

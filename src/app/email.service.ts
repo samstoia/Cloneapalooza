@@ -22,4 +22,10 @@ export class EmailService {
     return this.database.object('emails/' + emailId);
   }
 
+  updateEmail(localUpdatedEmail) {
+    var emailEntryInFirebase = this.getEmailById(localUpdatedEmail.$key);
+    emailEntryInFirebase.update({emailAddress: localUpdatedEmail.emailAddress});
+
+  }
+
 }
