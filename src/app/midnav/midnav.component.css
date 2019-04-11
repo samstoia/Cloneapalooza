@@ -91,7 +91,13 @@ a h3:hover {
   }
 }
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 1378px) {
+  #midnav {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 873px) {
   #midnav {
     height: 120px;
   }
