@@ -3,7 +3,7 @@
   display: inline-flex;
 }
 
-button {
+.artistButton {
   background-color: #9164cc;
   color: white;
   position: relative;
@@ -16,6 +16,16 @@ button {
   display: block;
   line-height: 1em; /* a */
   text-transform: uppercase;
+}
+h2 {
+  text-align: center;
+}
+
+.sortButton {
+  background-color: #9164cc;
+  color: white;
+  float: right;
+  margin-right: 45px;
 }
 
 /* @media (max-width:830px) {

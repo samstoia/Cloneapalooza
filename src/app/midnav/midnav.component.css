@@ -72,6 +72,7 @@ a h3:hover {
 
 
 
+
 .dropdown-content h3:hover {color: gold;}
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -90,6 +91,11 @@ a h3:hover {
   }
 }
 
+@media only screen and (max-width: 625px) {
+  #midnav {
+    height: 120px;
+  }
+}
 
 
 
