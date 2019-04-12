@@ -124,8 +124,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * vscode
 * webpack
 
-
-
 ## Authors
 
 | **Sam Stoia** | **GitHub: [samstoia](https://github.com/samstoia)** | **Email: [samstoia@gmail.com](mailto:samstoia@gmail.com)**
