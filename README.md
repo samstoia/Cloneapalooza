@@ -39,11 +39,32 @@ Core functionality includes:
 * Navigate to cloned folder in the command line ($cd Cloneapalooza)
 * Once there, type "npm install" to install necessary packages and dependencies.  Process will take a few moments.
 
-#### Ticketmaster API
-
-* Create api keys file in src project folder (From command line in project folder: touch src/api.keys.ts)
+#### Ticketmaster API Setup
+* You will need a working API Key from Ticketmaster to run this project.
+* First, create api keys file in src project folder (From command line in project folder: touch src/api-keys.ts)
 * Sign up for Ticketmaster API (free) here: https://developer.ticketmaster.com/
-* 
+* After signing up, you can find your consumer key by navigating to your "My Apps" page.
+* Once you have your key, put this line of code into your api-keys.ts:
+export const apiKey: string = "XXX" 
+Replace "XXX" with your personal key.
+
+#### Firebase Database Setup
+* You will need to setup a free firebase account to use the admin portion of the application.
+* make a free account at Firebase's website at http://firebase.google.com/.
+* You should then be taken to a user dashboard area, with an option to Create a New Project. Select this option, provide a name for your new project, and select your Country/region from the drop-down menu.
+* You'll then be taken to an "Overview" area. Where you'll be offered three options.
+Select Add Firebase to your web app. Firebase should respond with a pop-up modal window. Keep the information in this modal.
+* You should see a list of information like this:
+
+  apiKey: "XXX",
+  authDomain: "XXX.firebaseapp.com",
+  databaseURL: "XXX.firebaseio.com",
+  storageBucket: "original-nation-140420.appspot.com",
+  messagingSenderId: "XXX"
+
+  Your file should have your specific Firebase credentials and other information here, instead of xxxx
+
+
 
 ## Development server
 
