@@ -38,6 +38,8 @@ Core functionality includes:
 * Clone github repo: https://github.com/samstoia/Cloneapalooza
 * Navigate to cloned folder in the command line ($cd Cloneapalooza)
 * Once there, type "npm install" to install necessary packages and dependencies.  Process will take a few moments.
+* Run "ng serve -o" for a dev server. The app will automatically reload if you change any of the source files.
+* Some features won't yet be usable without further setup.  Continue reading for more setup instructions.
 
 #### Ticketmaster API Setup
 * You will need a working API Key from Ticketmaster to run this project.
@@ -45,7 +47,9 @@ Core functionality includes:
 * Sign up for Ticketmaster API (free) here: https://developer.ticketmaster.com/
 * After signing up, you can find your consumer key by navigating to your "My Apps" page.
 * Once you have your key, put this line of code into your api-keys.ts:
-export const apiKey: string = "XXX" 
+
+>export const apiKey: string = "XXX";
+
 Replace "XXX" with your personal key.
 
 #### Firebase Database Setup
@@ -56,15 +60,29 @@ Replace "XXX" with your personal key.
 Select Add Firebase to your web app. Firebase should respond with a pop-up modal window. Keep the information in this modal.
 * You should see a list of information like this:
 
-  apiKey: "XXX",
-  authDomain: "XXX.firebaseapp.com",
-  databaseURL: "XXX.firebaseio.com",
-  storageBucket: "original-nation-140420.appspot.com",
-  messagingSenderId: "XXX"
+  >apiKey: "XXX",
+  >authDomain: "XXX.firebaseapp.com",
+  >databaseURL: "XXX.firebaseio.com",
+  >storageBucket: "original-nation-140420.appspot.com",
+  >messagingSenderId: "XXX"
 
   Your file should have your specific Firebase credentials and other information here, instead of xxxx
 
+* You will now enter the information here into your api-keys.ts file you made while setting up the Ticketmaster API.  Add this code under the Ticketmaster api:
 
+>export const masterFirebaseConfig = {
+    >apiKey: "xxxx",
+    >authDomain: "xxxx.firebaseapp.com",
+    >databaseURL: "https://xxxx.firebaseio.com",
+    >storageBucket: "xxxx.appspot.com",
+    >messagingSenderId: "xxxx"
+  >};
+
+Once again, your credentials should replace any xxxx values.
+
+#### Running Application
+
+* After going through Ticketmaster and Firebase instructions, the site should be fully functional.
 
 ## Development server
 
@@ -98,11 +116,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 * Angular CLI
 * TypeScript
+* npm
+* Ticketmaster API
+* Firebase
 * karma
 * jasmine
 * vscode
 * webpack
-* npm
+
+
 
 ## Authors
 
