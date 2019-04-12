@@ -71,10 +71,10 @@ Select Add Firebase to your web app. Firebase should respond with a pop-up modal
 * You will now enter the information here into your api-keys.ts file you made while setting up the Ticketmaster API.  Add this code under the Ticketmaster api:
 
 >export const masterFirebaseConfig = {
-    >apiKey: "xxxx",
-    >authDomain: "xxxx.firebaseapp.com",
-    >databaseURL: "https://xxxx.firebaseio.com",
-    >storageBucket: "xxxx.appspot.com",
+    >apiKey: "xxxx"
+    >authDomain: "xxxx.firebaseapp.com"
+    >databaseURL: "https://xxxx.firebaseio.com"
+    >storageBucket: "xxxx.appspot.com"
     >messagingSenderId: "xxxx"
   >};
 
