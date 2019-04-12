@@ -1,0 +1,21 @@
+button {
+  width: 70%;
+  display: inline-block;
+  background-color:#00af9a;
+}
+
+.days, .type {
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
