@@ -1,18 +1,39 @@
 # LollaClone
 
-This is my attempt at recreating Lollapalooza's home page ahead of its 2019 festival.  
+This is my attempt at recreating Lollapalooza's home page ahead of its 2019 festival.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+This is a work in progress, and new features will get added along the way.
 
-Live Website here: https://www.lollapalooza.com/
+The live Lollapalooza Website is here: https://www.lollapalooza.com/
+My live clone is here: https://original-nation-140420.firebaseapp.com/
 
 ## Features Available Right Now:
 
-The site is a series of components made with Angular.  Right now, the page utilizes seven components which make up the structure of the home page.
+The site is a series of components made with Angular.
+
+Core functionality includes: 
+
+##### Landing Page
+
+* A field to sign up for an email list.  Field connects to a firebase database where information is stored. Email validation handled by Angular's default form validation functionality.
+
+* Links to the Tickets, Lineup, and Admin routes.
+
+##### Lineup Page
+
+* This page uses the Ticketmaster API to collect all artists performing at Lollapalooza in 2019. The lineup is initially sorted by headlining acts to least known artists.  Users can also choose to sort alphabetically.
+
+##### Tickets Page
+
+* This is a page that shows ticket prices for Lollapalooza.
+
+##### Tickets Page
+
+
 
 ## Features To Be Added:
 
-In the coming weeks, this site will be deployed to firebase, and users will be able to join a mailing list which will utilize a firebase database.  New components will also be added that will build out some of the parts of the website.
+
 
 ## Setup and Installation:
 
