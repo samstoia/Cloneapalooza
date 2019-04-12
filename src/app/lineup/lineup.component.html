@@ -7,7 +7,7 @@
 
 
 <div id="artists" class='col-md-3' *ngFor="let name of names">
-  <button class="artistButton">{{name}}</button>
+  <button class="artistButton" (click)="getArtistDetails()">{{name}}</button>
 </div>
 
 
