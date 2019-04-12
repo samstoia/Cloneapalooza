@@ -61,9 +61,13 @@ Select Add Firebase to your web app. Firebase should respond with a pop-up modal
 * You should see a list of information like this:
 
   >apiKey: "XXX",
+
   >authDomain: "XXX.firebaseapp.com",
+
   >databaseURL: "XXX.firebaseio.com",
+
   >storageBucket: "original-nation-140420.appspot.com",
+  
   >messagingSenderId: "XXX"
 
   Your file should have your specific Firebase credentials and other information here, instead of xxxx
