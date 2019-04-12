@@ -1,4 +1,4 @@
-<br>
+
 <h2>Interactive Lineup</h2>
 <button class="sortButton" (click)="sortArray()">Sort Alphabetically</button>
 <br>
@@ -7,7 +7,7 @@
 
 
 <div id="artists" class='col-md-3' *ngFor="let name of names">
-  <button class="artistButton" (click)="getArtistDetails()">{{name}}</button>
+  <button class="artistButton">{{name}}</button>
 </div>
 
 

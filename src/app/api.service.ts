@@ -11,6 +11,10 @@ export class ApiService {
   getArtists() {
     return this.http.get('https://app.ticketmaster.com/discovery/v2/events?apikey=' + apiKey + '&id=vv178Z4JGkS6JSZS%20&countryCode=US');
   }
+
+  getArtistDetails() {
+    return this.http.get('https://app.ticketmaster.com/discovery/v2/events?apikey=' + apiKey + '&id=vv178Z4JGkS6JSZS%20&countryCode=US');
+  }
 }
 
 

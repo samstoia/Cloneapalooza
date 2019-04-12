@@ -12,7 +12,6 @@ export class LineupComponent implements OnInit {
   artists;
   names: any[];
   ignoreName: any[];
-  artistInfo;
 
   constructor(private data: ApiService) { }
 
@@ -36,13 +35,9 @@ export class LineupComponent implements OnInit {
   }
 
   sortArray() {
+
     return this.names.sort();
   }
-
-  getArtistDetails() {
-    this.data.getArtists().subscribe(data => {
-      this.artistInfo = data
-      console.log(data)
-    })
-  }
+  
+  
 }
