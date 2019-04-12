@@ -27,19 +27,23 @@ Core functionality includes:
 
 * This is a page that shows ticket prices for Lollapalooza.
 
-##### Tickets Page
+##### Admin Page
 
-
-
-## Features To Be Added:
-
-
+* Users can navigate here to see all the emails currently added to the database.  Users can also edit these email addresses and delete them from the database.
 
 ## Setup and Installation:
 
-1. Clone github repo: https://github.com/samstoia/Cloneapalooza
-2. Navigate to cloned folder in the command line ($cd Cloneapalooza)
-3. Once there, type "npm install" to install necessary packages and dependencies.  You should now be able to edit the code, and see the website by launching a development server.
+#### Cloning From Github
+
+* Clone github repo: https://github.com/samstoia/Cloneapalooza
+* Navigate to cloned folder in the command line ($cd Cloneapalooza)
+* Once there, type "npm install" to install necessary packages and dependencies.  Process will take a few moments.
+
+#### Ticketmaster API
+
+* Create api keys file in src project folder (From command line in project folder: touch src/api.keys.ts)
+* Sign up for Ticketmaster API (free) here: https://developer.ticketmaster.com/
+* 
 
 ## Development server
 
@@ -53,6 +57,21 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Features To Be Added:
+
+##### Landing Page
+
+* Make search bar functional
+* Build out more routes and build corresponding components
+
+##### Lineup Page
+
+* Create artist view page so users can see details about artists
+
+##### Tickets page
+
+* Build out functionality for users to go through ticket ordering process
 
 ## Built With/Using
 
